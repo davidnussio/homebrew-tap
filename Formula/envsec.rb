@@ -1,15 +1,15 @@
 class Envsec < Formula
   desc "Secure environment secrets management using native OS credential stores"
   homepage "https://github.com/davidnussio/envsec"
-  url "https://registry.npmjs.org/envsec/-/envsec-1.0.0-beta.14.tgz"
-  sha256 "d3f78a58388cf3d5ef757438566a090637457d3c9c0b8feab60884825ebc3474"
+  url "https://registry.npmjs.org/envsec/-/envsec-1.0.0-beta.15.tgz"
+  sha256 "c8cd0bff8ff3b1d8b2403894416c23f1816952e3a46cbfc53bc69fe127b249b7"
   license "MIT"
-  version "1.0.0-beta.14"
+  version "1.0.0-beta.15"
 
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args
+    system "npm", "install", *std_npm_args, "--min-release-age=0"
     bin.install_symlink libexec.glob("bin/*")
     generate_completions_from_executable(bin/"envsec", "--completions", shells: [:bash, :zsh, :fish])
   end
