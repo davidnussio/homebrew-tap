@@ -1,10 +1,10 @@
 class Envsec < Formula
   desc "Secure environment secrets management using native OS credential stores"
   homepage "https://github.com/davidnussio/envsec"
-  url "https://registry.npmjs.org/envsec/-/envsec-1.0.0-beta.16.tgz"
-  sha256 "dd53e20d247954dfaa878c992066db90bbdd264936280d79d5d39dfd2e36915d"
+  url "https://registry.npmjs.org/envsec/-/envsec-1.0.0-beta17.tgz"
+  sha256 "dd778068b965a3c0f35023b625158845c5e5934dec73826eb3bd8da08126f38a"
   license "MIT"
-  version "1.0.0-beta.16"
+  version "1.0.0-beta17"
 
   depends_on "node"
 
