@@ -1,25 +1,25 @@
 class Lazyjq < Formula
   desc "A lazygit-style terminal UI to explore JSON with jq"
   homepage "https://github.com/davidnussio/lazyjq"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidnussio/lazyjq/releases/download/v0.1.0/lazyjq-aarch64-apple-darwin.tar.xz"
-      sha256 "825e8bee3f5336d773a63d3b748bd53cacaf32cf3d7a0f04967b53228b721033"
+      url "https://github.com/davidnussio/lazyjq/releases/download/v0.2.0/lazyjq-aarch64-apple-darwin.tar.xz"
+      sha256 "8eb8c36d4d8c21e73ca47cc276798db1735b8cce02c70b53fc91cbce04f89d9e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidnussio/lazyjq/releases/download/v0.1.0/lazyjq-x86_64-apple-darwin.tar.xz"
-      sha256 "251d434cc5437e634345acd2100e495524b894e0cef1d5808496a6018d426b78"
+      url "https://github.com/davidnussio/lazyjq/releases/download/v0.2.0/lazyjq-x86_64-apple-darwin.tar.xz"
+      sha256 "275e85b98ecb980ac4f58a372f719477a7f760536d4053b499092d77ea100631"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidnussio/lazyjq/releases/download/v0.1.0/lazyjq-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8b9d80f6f0ee813c6c35edee322ed68786d5d8ecdd3690e9566a20b8bcf3b2e7"
+      url "https://github.com/davidnussio/lazyjq/releases/download/v0.2.0/lazyjq-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2dc116970ad4a5914159d945d097bab3ffc9ee894e16b3a829c093f03155366a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidnussio/lazyjq/releases/download/v0.1.0/lazyjq-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ed5900ab887a6f63493d6681618348aa443b3c49bdf99488ce72b6faaae113c9"
+      url "https://github.com/davidnussio/lazyjq/releases/download/v0.2.0/lazyjq-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "279cfecf0abc1b74dd235d61ce19233ec061ba546407d685880d6c150e126438"
     end
   end
   license "MIT"
