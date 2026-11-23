@@ -1,6 +1,6 @@
 cask "granello" do
-  version "0.2.6"
-  sha256 "1715935455a84513368482b9fd09f3563af52dcf5711883d670ca3995bc38851"
+  version "0.2.7"
+  sha256 "c6dc6d253fbf7632d84b368607abaf106f5e13b44009a511587ce5b3b38fd837"
 
   url "https://github.com/davidnussio/granello/releases/download/v#{version}/Granello-#{version}-macOS-arm64.dmg"
   name "Granello"
@@ -17,17 +17,8 @@ cask "granello" do
   depends_on arch: :arm64
   depends_on macos: :ventura
 
+  # firmata con Developer ID e notarizzata: Gatekeeper la apre senza passaggi
   app "Granello.app"
-
-  # The app is not signed with an Apple Developer ID yet:
-  # drop the quarantine attribute so Gatekeeper lets it open.
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Granello.app"],
-        must_succeed:   false,
-        writable_paths: ["Granello.app"],
-        writable_base:  "appdir" # string, not symbol: mise bootstrap cannot read symbols here
-  end
 
   zap trash: [
     "~/Library/Application Support/ch.dambox.granello",
