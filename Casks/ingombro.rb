@@ -1,8 +1,8 @@
 cask "ingombro" do
-  version "2.0.0"
-  sha256 "623d1c8ea068be7d45183bc732e3273dfa0283979db77d6fb6ad78f4477c6b53"
+  version "2.0.1"
+  sha256 "960c2821663f8efa7f64b99c7b9a0318f97e2b5b0fce58835a5ea73b0fa84cd2"
 
-  url "https://github.com/davidnussio/ingombro/releases/download/v2.0.0/stable-macos-arm64-Ingombro.dmg"
+  url "https://github.com/davidnussio/ingombro/releases/download/v2.0.1/stable-macos-arm64-Ingombro.dmg"
   name "Ingombro"
   desc "Disk space analyzer and cleaner"
   homepage "https://github.com/davidnussio/ingombro"
