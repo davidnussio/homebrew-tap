@@ -26,7 +26,7 @@ cask "granello" do
         args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Granello.app"],
         must_succeed:   false,
         writable_paths: ["Granello.app"],
-        writable_base:  :appdir
+        writable_base:  "appdir" # string, not symbol: mise bootstrap cannot read symbols here
   end
 
   zap trash: [
