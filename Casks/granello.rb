@@ -1,6 +1,6 @@
 cask "granello" do
-  version "0.2.5"
-  sha256 "0cfcb9777c9572c0a68474730786fae91f6cde695a6cc2bf9b230aa02ba01c09"
+  version "0.2.6"
+  sha256 "1715935455a84513368482b9fd09f3563af52dcf5711883d670ca3995bc38851"
 
   url "https://github.com/davidnussio/granello/releases/download/v#{version}/Granello-#{version}-macOS-arm64.dmg"
   name "Granello"
