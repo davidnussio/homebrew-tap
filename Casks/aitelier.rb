@@ -17,6 +17,7 @@ cask "aitelier" do
 
   # the app updates itself (Electrobun updater)
   auto_updates true
+  depends_on macos: :sonoma
 
   # signed with Developer ID and notarized: Gatekeeper opens it without extra steps
   app "AItelier.app"
